@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="searchTextField" destination="i5y-5r-Zxm" id="aad-0Z-HlL"/>
+                <outlet property="tableView" destination="vAr-Mb-HM9" id="JST-Vs-9GQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="搜索_06" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-7Q-45n">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="搜索_搜索框" translatesAutoresizingMaskIntoConstraints="NO" id="qUR-B1-nVY">
+                    <rect key="frame" x="13" y="8" width="295" height="41"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5h-fn-Lwp">
+                    <rect key="frame" x="271" y="18" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="FbW-rj-J6v"/>
+                        <constraint firstAttribute="height" constant="22" id="ndw-Ex-eod"/>
+                    </constraints>
+                    <state key="normal" image="搜索_03">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startSearch:" destination="-1" eventType="touchUpInside" id="erx-62-ZpM"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码/单号查询" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="i5y-5r-Zxm">
+                    <rect key="frame" x="28" y="13" width="235" height="31"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="AKS-9O-9pN"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vAr-Mb-HM9">
+                    <rect key="frame" x="0.0" y="56" width="320" height="512"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aZs-4V-UT7"/>
+                        <outlet property="delegate" destination="-1" id="A0F-SG-chu"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="b0F-7Q-45n" secondAttribute="trailing" id="52Q-2S-bM9"/>
+                <constraint firstItem="qUR-B1-nVY" firstAttribute="leading" secondItem="i5y-5r-Zxm" secondAttribute="leading" constant="-15" id="7me-RF-kMQ"/>
+                <constraint firstItem="qUR-B1-nVY" firstAttribute="centerY" secondItem="i5y-5r-Zxm" secondAttribute="centerY" id="FMO-mj-egu"/>
+                <constraint firstAttribute="trailing" secondItem="vAr-Mb-HM9" secondAttribute="trailing" id="PCx-1t-N1C"/>
+                <constraint firstAttribute="bottom" secondItem="vAr-Mb-HM9" secondAttribute="bottom" id="Voy-kL-aPT"/>
+                <constraint firstItem="b0F-7Q-45n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WAT-iJ-daD"/>
+                <constraint firstItem="N5h-fn-Lwp" firstAttribute="trailing" secondItem="qUR-B1-nVY" secondAttribute="trailing" constant="-15" id="YFh-Mn-wEX"/>
+                <constraint firstItem="b0F-7Q-45n" firstAttribute="centerY" secondItem="qUR-B1-nVY" secondAttribute="centerY" id="YI6-nc-TVI"/>
+                <constraint firstItem="N5h-fn-Lwp" firstAttribute="centerY" secondItem="qUR-B1-nVY" secondAttribute="centerY" id="cMQ-3I-Zid"/>
+                <constraint firstItem="qUR-B1-nVY" firstAttribute="top" secondItem="i5y-5r-Zxm" secondAttribute="top" constant="-5" id="cxV-6g-euB"/>
+                <constraint firstItem="qUR-B1-nVY" firstAttribute="bottom" secondItem="i5y-5r-Zxm" secondAttribute="bottom" constant="5" id="fim-8R-UZf"/>
+                <constraint firstItem="N5h-fn-Lwp" firstAttribute="leading" secondItem="i5y-5r-Zxm" secondAttribute="trailing" constant="8" id="gAH-bh-AaE"/>
+                <constraint firstItem="b0F-7Q-45n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kjS-1O-MU1"/>
+                <constraint firstItem="vAr-Mb-HM9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qSL-4f-Qka"/>
+                <constraint firstItem="b0F-7Q-45n" firstAttribute="centerX" secondItem="qUR-B1-nVY" secondAttribute="centerX" id="uBD-O3-cR5"/>
+                <constraint firstItem="vAr-Mb-HM9" firstAttribute="top" secondItem="b0F-7Q-45n" secondAttribute="bottom" id="yjl-qw-0cz"/>
+            </constraints>
+            <point key="canvasLocation" x="215" y="234"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="搜索_03" width="19" height="18"/>
+        <image name="搜索_06" width="320" height="56"/>
+        <image name="搜索_搜索框" width="295" height="41"/>
+    </resources>
+</document>

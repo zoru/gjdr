@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ModifyPwdCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通用_输入框" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-WO-IhM">
+                        <rect key="frame" x="12" y="20" width="296" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-s3-uIt">
+                        <rect key="frame" x="22" y="34" width="53" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="原密码">
+                                <attributes>
+                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="*">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frZ-k9-ub3">
+                        <rect key="frame" x="83" y="29" width="210" height="32"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通用_输入框" translatesAutoresizingMaskIntoConstraints="NO" id="rKa-oq-XAp">
+                        <rect key="frame" x="12" y="90" width="296" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-tb-0Xl">
+                        <rect key="frame" x="22" y="105" width="53" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="新密码">
+                                <attributes>
+                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="*">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="通用_输入框" translatesAutoresizingMaskIntoConstraints="NO" id="l0q-sa-8pi">
+                        <rect key="frame" x="12" y="160" width="296" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewA-EO-dVr">
+                        <rect key="frame" x="22" y="174" width="68" height="21"/>
+                        <attributedString key="attributedText">
+                            <fragment content="确认密码">
+                                <attributes>
+                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="*">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="15" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入新密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajK-nR-qEd">
+                        <rect key="frame" x="98" y="169" width="195" height="32"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-Px-Da0">
+                        <rect key="frame" x="17" y="310" width="136" height="42"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="取消" backgroundImage="修改密码_03">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="modifyCancel:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="o7n-cb-yam"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置新密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWj-DW-E46">
+                        <rect key="frame" x="83" y="99" width="210" height="32"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ju-Hx-g6m">
+                        <rect key="frame" x="167" y="310" width="136" height="42"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="提交" backgroundImage="修改密码_05">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="submit:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8v1-ZU-50R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OWj-DW-E46" firstAttribute="trailing" secondItem="rKa-oq-XAp" secondAttribute="trailing" constant="-15" id="0nF-aD-bUn"/>
+                    <constraint firstItem="l0q-sa-8pi" firstAttribute="leading" secondItem="ewA-EO-dVr" secondAttribute="leading" constant="-10" id="2Zu-Cu-vFT"/>
+                    <constraint firstAttribute="centerX" secondItem="4ta-Px-Da0" secondAttribute="centerX" constant="75" id="2cg-wl-vsG"/>
+                    <constraint firstItem="7Ju-Hx-g6m" firstAttribute="centerY" secondItem="4ta-Px-Da0" secondAttribute="centerY" id="2mE-tl-AiK"/>
+                    <constraint firstItem="OWj-DW-E46" firstAttribute="bottom" secondItem="rKa-oq-XAp" secondAttribute="bottom" constant="-9" id="47z-0T-cP7"/>
+                    <constraint firstItem="rKa-oq-XAp" firstAttribute="top" secondItem="OxN-WO-IhM" secondAttribute="bottom" constant="20" id="8fD-ia-3w2"/>
+                    <constraint firstItem="l0q-sa-8pi" firstAttribute="top" secondItem="rKa-oq-XAp" secondAttribute="bottom" constant="20" id="90i-tg-4Bn"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="trailing" secondItem="OxN-WO-IhM" secondAttribute="trailing" constant="-15" id="Ayo-yl-lxo"/>
+                    <constraint firstItem="rKa-oq-XAp" firstAttribute="leading" secondItem="I1J-tb-0Xl" secondAttribute="leading" constant="-10" id="BrU-yU-aOZ"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="top" secondItem="OxN-WO-IhM" secondAttribute="top" constant="9" id="DXa-sf-3il"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="bottom" secondItem="OxN-WO-IhM" secondAttribute="bottom" constant="-10" id="FFT-M1-WiK"/>
+                    <constraint firstItem="l0q-sa-8pi" firstAttribute="centerY" secondItem="ewA-EO-dVr" secondAttribute="centerY" id="FOS-eW-hQe"/>
+                    <constraint firstItem="ajK-nR-qEd" firstAttribute="trailing" secondItem="l0q-sa-8pi" secondAttribute="trailing" constant="-15" id="J8z-I7-kt9"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="leading" secondItem="2gF-s3-uIt" secondAttribute="trailing" constant="8" id="JZY-ju-hAQ"/>
+                    <constraint firstItem="ajK-nR-qEd" firstAttribute="bottom" secondItem="l0q-sa-8pi" secondAttribute="bottom" constant="-9" id="L7n-Ng-NkX"/>
+                    <constraint firstItem="OWj-DW-E46" firstAttribute="top" secondItem="rKa-oq-XAp" secondAttribute="top" constant="9" id="Li9-vc-8rq"/>
+                    <constraint firstAttribute="centerX" secondItem="OxN-WO-IhM" secondAttribute="centerX" id="QO7-Ir-ANc"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="bottom" secondItem="OxN-WO-IhM" secondAttribute="bottom" constant="-9" id="QrU-DB-V6I"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="leading" secondItem="2gF-s3-uIt" secondAttribute="trailing" constant="8" id="RPz-2V-o1t"/>
+                    <constraint firstItem="OxN-WO-IhM" firstAttribute="leading" secondItem="2gF-s3-uIt" secondAttribute="leading" constant="-10" id="RpH-md-kWm"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="trailing" secondItem="OxN-WO-IhM" secondAttribute="trailing" constant="-15" id="ZLM-Ec-Zyg"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="centerY" secondItem="OxN-WO-IhM" secondAttribute="centerY" id="aIX-ig-YBX"/>
+                    <constraint firstAttribute="centerY" secondItem="l0q-sa-8pi" secondAttribute="centerY" constant="74.5" id="aKr-Gr-RIF"/>
+                    <constraint firstItem="OWj-DW-E46" firstAttribute="leading" secondItem="I1J-tb-0Xl" secondAttribute="trailing" constant="8" id="eC2-xd-FDA"/>
+                    <constraint firstItem="4ta-Px-Da0" firstAttribute="top" secondItem="l0q-sa-8pi" secondAttribute="bottom" constant="100" id="fwG-DM-JHa"/>
+                    <constraint firstItem="ajK-nR-qEd" firstAttribute="top" secondItem="l0q-sa-8pi" secondAttribute="top" constant="9" id="gHO-Hg-95U"/>
+                    <constraint firstAttribute="centerX" secondItem="rKa-oq-XAp" secondAttribute="centerX" id="iYC-gI-gz8"/>
+                    <constraint firstItem="OxN-WO-IhM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="jGJ-yu-dSI"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="centerY" secondItem="OxN-WO-IhM" secondAttribute="centerY" id="jcs-6e-czJ"/>
+                    <constraint firstItem="OWj-DW-E46" firstAttribute="centerY" secondItem="rKa-oq-XAp" secondAttribute="centerY" id="kBd-KA-m4S"/>
+                    <constraint firstItem="ajK-nR-qEd" firstAttribute="leading" secondItem="ewA-EO-dVr" secondAttribute="trailing" constant="8" id="oka-hy-get"/>
+                    <constraint firstItem="rKa-oq-XAp" firstAttribute="centerY" secondItem="I1J-tb-0Xl" secondAttribute="centerY" id="qep-bY-1I6"/>
+                    <constraint firstItem="ajK-nR-qEd" firstAttribute="centerY" secondItem="l0q-sa-8pi" secondAttribute="centerY" id="srr-pO-EFV"/>
+                    <constraint firstAttribute="centerX" secondItem="l0q-sa-8pi" secondAttribute="centerX" id="uNA-oR-Oiy"/>
+                    <constraint firstItem="frZ-k9-ub3" firstAttribute="top" secondItem="OxN-WO-IhM" secondAttribute="top" constant="8" id="ufl-zY-atz"/>
+                    <constraint firstAttribute="centerX" secondItem="7Ju-Hx-g6m" secondAttribute="centerX" constant="-75" id="voO-pU-SAT"/>
+                    <constraint firstItem="OxN-WO-IhM" firstAttribute="centerY" secondItem="2gF-s3-uIt" secondAttribute="centerY" id="yWd-T1-KWc"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="FFT-M1-WiK"/>
+                        <exclude reference="JZY-ju-hAQ"/>
+                        <exclude reference="ZLM-Ec-Zyg"/>
+                        <exclude reference="jcs-6e-czJ"/>
+                        <exclude reference="ufl-zY-atz"/>
+                        <exclude reference="aKr-Gr-RIF"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="NePwdTextField" destination="ajK-nR-qEd" id="av5-ih-K2c"/>
+                <outlet property="NpwdTextField" destination="OWj-DW-E46" id="aRz-Rg-r2h"/>
+                <outlet property="oldPwdTextField" destination="frZ-k9-ub3" id="jLI-62-4al"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="246"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="修改密码_03" width="136" height="42"/>
+        <image name="修改密码_05" width="136" height="42"/>
+        <image name="通用_输入框" width="296" height="50"/>
+    </resources>
+</document>

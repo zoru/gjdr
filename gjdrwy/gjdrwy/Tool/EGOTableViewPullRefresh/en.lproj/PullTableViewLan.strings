@@ -1,0 +1,14 @@
+/* 
+  PullTableViewLan.strings
+  OnlineShopping
+
+  Created by YiJianJun on 13-10-4.
+  Copyright (c) 2013年 YiJianJun. All rights reserved.
+*/
+"Updated %ld minute ago"="更新于%ld分钟以前";
+"Updated %ld minutes ago"="更新于%ld分钟以前";
+"Release to refresh..."="释放刷新...";
+"Pull down to refresh..."="下拉刷新...";
+"Loading..."="loading...";
+"Release to load more..."="释放加载更多...";
+"Pull up to load more..."="上拉加载更多...";

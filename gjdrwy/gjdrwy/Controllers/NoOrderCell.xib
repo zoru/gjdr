@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="NoOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="427"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有客户帮助" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2r-ul-ILq">
+                        <rect key="frame" x="109" y="125" width="102" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="lX5-8C-JHx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lX5-8C-JHx"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="业主_首页" translatesAutoresizingMaskIntoConstraints="NO" id="USc-jv-Emo">
+                        <rect key="frame" x="120" y="156" width="80" height="114"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="176" id="9cK-gX-ZE3"/>
+                            <constraint firstAttribute="width" constant="180" id="Dbz-K5-Xvc"/>
+                            <constraint firstAttribute="height" constant="176" id="GB1-Rt-fey"/>
+                            <constraint firstAttribute="width" constant="160" id="OGF-PZ-Ywa"/>
+                            <constraint firstAttribute="width" constant="180" id="Oz1-aB-IYr"/>
+                            <constraint firstAttribute="width" secondItem="USc-jv-Emo" secondAttribute="height" multiplier="44:44" id="esY-Jz-ImT"/>
+                            <constraint firstAttribute="height" constant="160" id="iu4-s7-M5d"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9cK-gX-ZE3"/>
+                                <exclude reference="Dbz-K5-Xvc"/>
+                                <exclude reference="GB1-Rt-fey"/>
+                                <exclude reference="OGF-PZ-Ywa"/>
+                                <exclude reference="Oz1-aB-IYr"/>
+                                <exclude reference="esY-Jz-ImT"/>
+                                <exclude reference="iu4-s7-M5d"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="USc-jv-Emo" secondAttribute="centerY" id="0MQ-dP-Jag"/>
+                    <constraint firstAttribute="centerX" secondItem="USc-jv-Emo" secondAttribute="centerX" id="HDB-sf-1pQ"/>
+                    <constraint firstItem="USc-jv-Emo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="62" id="Jwp-Fe-EXm"/>
+                    <constraint firstItem="USc-jv-Emo" firstAttribute="top" secondItem="c2r-ul-ILq" secondAttribute="bottom" constant="10" id="Lc2-TZ-7l8"/>
+                    <constraint firstAttribute="centerY" secondItem="USc-jv-Emo" secondAttribute="centerY" id="aul-YM-nqQ"/>
+                    <constraint firstAttribute="centerX" secondItem="USc-jv-Emo" secondAttribute="centerX" id="ie3-Fc-qVw"/>
+                    <constraint firstAttribute="centerX" secondItem="c2r-ul-ILq" secondAttribute="centerX" id="s6Y-26-dFE"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HDB-sf-1pQ"/>
+                        <exclude reference="Jwp-Fe-EXm"/>
+                        <exclude reference="aul-YM-nqQ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="titleLable" destination="c2r-ul-ILq" id="gXU-N5-RKL"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="249.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="业主_首页" width="80" height="114"/>
+    </resources>
+</document>
